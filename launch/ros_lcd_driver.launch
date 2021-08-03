@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  \licens       Software License Agreement (MIT)
+  \file         <workspace>/src/ros_lcd_driver/launch/ros_lcd_driver.launch
+  \authors      stefan.kull@gmail.com (Github ID 'SeniorKullken')
+  \repository   https://github.com/Pet-Series
+  \repository   https://github.com/Pet-Series/pet_mk_iv_simulation
+  \copyright    
+  \description  Launch ROS-package that publish text, via ROS-topics, on an physical I2C-Display.
+  ____________________________________________________________________________
+  \usage
+    $ roslaunch ros_lcd_driver ros_lcd_driver.launch
+  ____________________________________________________________________________
+  
+  \reference  http://gazebosim.org/tutorials?tut=ros_roslaunch
+-->
+<launch>
+    <node pkg="ros_lcd_driver" type="lcd_driver_node.py" name="lcd_display" output="screen"/>
+<!--
+      <remap from="text_topic" to="/lcd_display/row1"/>
+-->
+</launch>
