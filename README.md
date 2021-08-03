@@ -7,6 +7,14 @@ ROS Package folder in the https://github.com/Pet-Series Git-Organizations.</br>
 ROS-package that publish text, via ROS-topics, on an physical I2C-Display.</br>
 This packages also contains a ROS test publisher.</br>
 
+### Example of applications:
+- <table style="width:100%">
+      <tr>
+        <td><img src="/doc/LCD_displays_LCD1602A_LCD2040A.png" width="350px"></td>
+        <td><img src="/doc/LCD_displays_LCD1602A_with_PCF8574T.png" width="350px"></td>
+     </tr>
+   </table>
+
 * Display any string on the LCD-Display via ROS-topics.
   * ROS-topic `lcd_display/row1` => LCD-display row1
   * ROS-topic `lcd_display/row2` => LCD-display row2
