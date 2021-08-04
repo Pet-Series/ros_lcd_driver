@@ -1,17 +1,17 @@
 # README: /ros_lcd_driver/ #
 
-ROS Package folder in the https://github.com/Pet-Series Git-Organizations.</br>
+ROS repository in the https://github.com/Pet-Series Git-Organizations.</br>
+Containing a ROS-package.
 
 ## **What is this folder for?** ##
 
 ROS-package that publish text, via ROS-topics, on an physical I2C-Display.</br>
 This packages also contains a ROS test publisher.</br>
 
-### Example of applications:
-<table style="width:100%">
+<table>
     <tr>
         <td>
-            <img src="/doc/LCD_displays_LCD1602A_LCD2040A.png" width="350px">
+            <img src="doc/LCD_displays_LCD1602A_LCD2040A.png" width="350px">
         </td>
         <td>
             Display any string on the LCD-Display via ROS-topics.</br>
@@ -30,16 +30,16 @@ This packages also contains a ROS test publisher.</br>
         ```
         $ pip install rpi-lcd
         ```
-    <table style="width:100%">
-        <tr>
-            <td>
-                <img src="/doc/LCD_displays_LCD1602A_with_PCF8574T.png" width="350px">
-            </td>
-            <td>
-                Display LCD1602A with I²C interface PC8574T
-            </td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <td>
+                    <img src="doc/LCD_displays_LCD1602A_with_PCF8574T.png" width="300px">
+                </td>
+                <td>
+                    Display LCD1602A with I²C interface PC8574T
+                </td>
+            </tr>
+        </table>
 * **Hardware:** I²C wire between the PC8574T and the Raspberry Pi.
 * **Hardware:** Raspberry Pi (aka. Target System)
   * **Operating system:** Linux/Raspian Buster (based on Debian 10)
