@@ -8,30 +8,42 @@ ROS-package that publish text, via ROS-topics, on an physical I2C-Display.</br>
 This packages also contains a ROS test publisher.</br>
 
 ### Example of applications:
-- <table style="width:100%">
-      <tr>
-        <td><img src="/doc/LCD_displays_LCD1602A_LCD2040A.png" width="350px"></td>
-        <td><img src="/doc/LCD_displays_LCD1602A_with_PCF8574T.png" width="350px"></td>
-     </tr>
-   </table>
-
-* Display any string on the LCD-Display via ROS-topics.
-  * ROS-topic `lcd_display/row1` => LCD-display row1
-  * ROS-topic `lcd_display/row2` => LCD-display row2
+<table style="width:100%">
+    <tr>
+        <td>
+            <img src="/doc/LCD_displays_LCD1602A_LCD2040A.png" width="350px">
+        </td>
+        <td>
+            Display any string on the LCD-Display via ROS-topics.</br>
+            * ROS-topic `lcd_display/row1` => LCD-display row1</br>
+            * ROS-topic `lcd_display/row2` => LCD-display row2
+        </td>
+    </tr>
+</table>
 
 
 ## **How do I set up the Hardware?** ##
 
-* Hardware: Display LCD1602A (LCD2040) LCD Display - 16x2 Character LCD Backlight
-* Hardware: I²C interface PC8574T - Piggyback on the backisde of the display.</br>
-    Pyhton library "`from rpi_lcd import LCD`" that supports LCD text displays (20x4, 16x2 and other) via the I²C converter.</br>
-    ```
-    $ pip install rpi-lcd
-    ```
-* Hardware: I²C wire (PC8574T <-> Raspberry Pi)
-* Hardware: Raspberry Pi (aka. Target System)
-  * Operating system: Linux/Raspian Buster (based on Debian 10)
-  * Middleware: ROS 1.0 Melodic
+*   **Hardware:** Display LCD1602A (LCD2040) LCD Display - 16x2 Character LCD Backlight.
+*   **Hardware:** I²C interface PC8574T - Piggyback on the backisde of the display.</br>
+    *   **Software:** Pyhton library "`from rpi_lcd import LCD`" that supports LCD text displays (20x4, 16x2 and other) via the I²C converter.</br>
+        ```
+        $ pip install rpi-lcd
+        ```
+    <table style="width:100%">
+        <tr>
+            <td>
+                <img src="/doc/LCD_displays_LCD1602A_with_PCF8574T.png" width="350px">
+            </td>
+            <td>
+                Display LCD1602A with I²C interface PC8574T
+            </td>
+        </tr>
+    </table>
+* **Hardware:** I²C wire between the PC8574T and the Raspberry Pi.
+* **Hardware:** Raspberry Pi (aka. Target System)
+  * **Operating system:** Linux/Raspian Buster (based on Debian 10)
+  * **Middleware:** ROS 1.0 Melodic
 
 ## **How do I set up the ROS-package?** ##
 ```
