@@ -1,12 +1,12 @@
 # README: /ros_lcd_driver/ #
 
-ROS repository in the https://github.com/Pet-Series Git-Organizations.</br>
-Containing a ROS-package.
+ROS1 repository in the https://github.com/Pet-Series Git-Organizations.</br>
+Containing a ROS1-package.
 
 ## **What is this folder for?** ##
 
-ROS-package that publish text, via ROS-topics, on an physical I2C-Display.</br>
-This packages also contains a ROS test publisher.</br>
+ROS1-package that publish text, via ROS1-topics, on an physical I2C-Display.</br>
+This packages also contains a ROS1 test publisher.</br>
 
 <table>
     <tr>
@@ -14,9 +14,9 @@ This packages also contains a ROS test publisher.</br>
             <img src="doc/LCD_displays_LCD1602A_LCD2040A.png" width="350px">
         </td>
         <td>
-            Display any string on the LCD-Display via ROS-topics.</br>
-            * ROS-topic `lcd_display/row1` => LCD-display row1</br>
-            * ROS-topic `lcd_display/row2` => LCD-display row2
+            Display any string on the LCD-Display via ROS1-topics.</br>
+            * ROS1-topic `lcd_display/row1` => LCD-display row1</br>
+            * ROS1-topic `lcd_display/row2` => LCD-display row2
         </td>
     </tr>
 </table>
@@ -45,14 +45,14 @@ This packages also contains a ROS test publisher.</br>
   * **Operating system:** Linux/Raspian Buster (based on Debian 10)
   * **Middleware:** ROS 1.0 Melodic
 
-## **How do I set up the ROS-package?** ##
+## **How do I set up the ROS1-package?** ##
 ```
 $ cd <your ROS-workspace>
 $ git clone https://github.com/Pet-Series/ros_lcd_driver.git
 $ catkin build ros_lcd_driver
 ```
 
-## **How do I launch the ROS-package?** ##
+## **How do I launch the ROS1-package?** ##
 1. Launch main ROS-system (on the Target System) 
    ```
    $ roscore
