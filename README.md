@@ -1,7 +1,8 @@
 # README: /ros_lcd_driver/ #
 
 ROS1 repository in the https://github.com/Pet-Series Git-Organizations.</br>
-Containing a ROS1-package.
+* Containing a ROS1-package.<br>
+* For a ROS2 package, please visit https://github.com/Pet-Series/pet_ros2_lcd_pkg
 
 ## **What is this folder for?** ##
 
@@ -21,6 +22,12 @@ This packages also contains a ROS1 test publisher.</br>
     </tr>
 </table>
 
+```mermaid
+flowchart LR
+    A(topic: lcd_display/row1)-->|Subscribe| C[node: Ros_lcd_node]
+    B(topic: lcd_display/row1)-->|Subscribe| C
+    C -->|i2c| D[hardware: LCD1602 display]
+```
 
 ## **How do I set up the Hardware?** ##
 
