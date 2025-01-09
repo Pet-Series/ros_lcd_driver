@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/pi/ros_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/pi/ros_ws/src/BehaviorTree.CPP/include/**",
+        "/home/pi/ros_ws/src/BehaviorTree.ROS/include/**",
+        "/home/pi/ros_ws/src/Pet-Mk-IV/pet_mk_iv_localisation/include/**",
+        "/home/pi/ros_ws/src/rosserial/rosserial_server/include/**",
+        "/home/pi/ros_ws/src/rosserial/rosserial_test/include/**",
+        "/home/pi/ros_ws/src/ugl/include/**",
+        "/home/pi/ros_ws/src/ugl_ros/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
